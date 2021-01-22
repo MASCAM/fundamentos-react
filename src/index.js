@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';                               //para renderizar o document
+import React from 'react';                                      //módulo do React padrão  
+import './index.css'                                            //arquivo de estilização
+import App from './App'                                         //arquivo principal da aplicação
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const el = document.getElementById('root');
+
+//par de chaves para colocar variáveis dentro das tags React
+ReactDOM.render( //renderiza tags com a linguagem javascript para o DOM, sintaxe JSX
+
+    <App/>,
+    el,
+    
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
