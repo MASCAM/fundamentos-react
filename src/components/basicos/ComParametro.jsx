@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function ComParametro(props) { //teste de componente com parâmetro
 
-    console.log(props);
     const status = props.nota >= 7 ? 'Aprovado' : 'de Recuperação'
     const notaInt = Math.ceil(props.nota);
     return  (<div>

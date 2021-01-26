@@ -9,6 +9,6 @@ export default function Fragmento(props) { //exemplo de uso de fragmento React
             <p>Cuidado com esse erro!</p>
         </React.Fragment>
 
-    )
+    );
 
 }
