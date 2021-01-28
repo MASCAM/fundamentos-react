@@ -1,7 +1,9 @@
 import './App.css'
 import React from 'react';
 
-import ListaAlunos from './components/repeticao/ListaAlunos'      //import de componente exemplo de lista
+import UsuarioInfo from './components/condicional/UsuarioInfo'      //import do segundo exemplo de renderização condicional
+import ParOuImpar from './components/condicional/ParOuImpar'        //import do primeiro exemplo de renderização condicional
+import ListaAlunos from './components/repeticao/ListaAlunos'        //import de componente exemplo de lista
 import FamiliaMembro from './components/basicos/FamiliaMembro'      //import de componente exemplo de membro de família
 import Familia from './components/basicos/Familia'                  //import de componente exemplo de família
 import Card from './components/layout/Card';                        //import do componente de exemplo de card
@@ -9,12 +11,26 @@ import Aleatorio from './components/basicos/Aleatorio';             //import de 
 import Primeiro from './components/basicos/Primeiro';               //import de componente de teste     
 import ComParametro from './components/basicos/ComParametro';       //import de componente com parâmetro
 import Fragmento from './components/basicos/Fragmento';             //import de componente com exemplo de fragmento
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 export default (_) => ( //modo muito compacto de declarar um componente
 
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+                <Card titulo="#08 - Renderização Condicional" color="#982395">
+                    <ParOuImpar numero={20}></ParOuImpar>
+                    <ParOuImpar numero={19}></ParOuImpar>
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }}></UsuarioInfo>
+                    <UsuarioInfo usuario={{ email: 'fer@nando.com' }}></UsuarioInfo>
+                    <UsuarioInfo usuario={{}}></UsuarioInfo>
+                    <UsuarioInfo/>
+                </Card>
+                <Card titulo="#07 - Desafio Repetição" color="#FF432E">
+                    <TabelaProdutos>
+                        
+                    </TabelaProdutos>
+                </Card>
                 <Card titulo="#06 - Repetição" color="#FF4C65">
                     <ListaAlunos>
                         
