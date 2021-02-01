@@ -1,8 +1,12 @@
 import './App.css'
 import React from 'react';
 
+import Input from './components/formulario/Input'                   //import de componente de exemplo de componente controlado     
+import IndiretaPai from './components/comunicacao/IndiretaPai';     //import de componente de exemplo de comunicação indireta
+import DiretaPai from './components/comunicacao/DiretaPai'          //import de componente de exemplo de comunicação direta
 import UsuarioInfo from './components/condicional/UsuarioInfo'      //import do segundo exemplo de renderização condicional
 import ParOuImpar from './components/condicional/ParOuImpar'        //import do primeiro exemplo de renderização condicional
+import TabelaProdutos from './components/repeticao/TabelaProdutos'; //import de componente com exemplo de tabela
 import ListaAlunos from './components/repeticao/ListaAlunos'        //import de componente exemplo de lista
 import FamiliaMembro from './components/basicos/FamiliaMembro'      //import de componente exemplo de membro de família
 import Familia from './components/basicos/Familia'                  //import de componente exemplo de família
@@ -11,13 +15,27 @@ import Aleatorio from './components/basicos/Aleatorio';             //import de 
 import Primeiro from './components/basicos/Primeiro';               //import de componente de teste     
 import ComParametro from './components/basicos/ComParametro';       //import de componente com parâmetro
 import Fragmento from './components/basicos/Fragmento';             //import de componente com exemplo de fragmento
-import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 export default (_) => ( //modo muito compacto de declarar um componente
 
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+                <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
+                    <Input>
+
+                    </Input>
+                </Card>
+                <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                    <IndiretaPai>
+
+                    </IndiretaPai>
+                </Card>
+                <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                    <DiretaPai>
+
+                    </DiretaPai>
+                </Card>
                 <Card titulo="#08 - Renderização Condicional" color="#982395">
                     <ParOuImpar numero={20}></ParOuImpar>
                     <ParOuImpar numero={19}></ParOuImpar>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';  //importa o react
 
 export default props => { //exemplo de componente membro de família
 

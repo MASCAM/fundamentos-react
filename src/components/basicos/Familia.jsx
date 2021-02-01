@@ -7,7 +7,7 @@ export default props => { //exemplo de componente família
 
         <div>
             {
-                props.children.map((child, i) => {  {/*gera um clone dos elementos pais passado juntamente com suas propriedades*/}
+                props.children.map((child, i) => {  {/*gera um clone dos elementos filhos passado juntamente com suas propriedades*/}
 
                     return cloneElement(child, {...props, key: i}); 
 
