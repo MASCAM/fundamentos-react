@@ -7,7 +7,7 @@ export default props => {
     function quandoMudar(e)  { //quando uma tecla é pressionada no input essa função é chamada
 
         setValor(e.target.value); //altera o valor do input
-
+        
     }
     return (
 
